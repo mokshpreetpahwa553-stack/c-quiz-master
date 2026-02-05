@@ -1,0 +1,119 @@
+Q: Which function is used to open a file in C?
+A) open()
+B) fopen()
+C) fileopen()
+D) create()
+ANSWER: B
+
+Q: What does fopen("data.txt", "r") return if the file does not exist?
+A) 0
+B) NULL
+C) -1
+D) EOF
+ANSWER: B
+
+Q: Which mode is used to append text at the end of an existing file?
+A) "w"
+B) "r+"
+C) "a"
+D) "wb"
+ANSWER: C
+
+Q: Which function reads a line of text (including newline) from a file?
+A) fscanf()
+B) fgets()
+C) fread()
+D) getc()
+ANSWER: B
+
+Q: What does fclose() return when it successfully closes a file?
+A) EOF
+B) 0
+C) 1
+D) NULL
+ANSWER: B
+
+Q: Which function can detect both end-of-file and read errors?
+A) feof()
+B) ferror()
+C) Both A and B can be used together
+D) eof()
+ANSWER: C
+
+Q: To move the file pointer 8 bytes from the current position, use:
+A) fseek(fp, 8, SEEK_SET)
+B) fseek(fp, 8, SEEK_CUR)
+C) fseek(fp, 8, SEEK_END)
+D) rewind(fp)
+ANSWER: B
+
+Q: Which is correct for writing one integer value to a file using fprintf?
+A) fprintf(fp, %d, x)
+B) fprintf(fp, "%d", x)
+C) fprintf("%d", fp, x)
+D) fprintf(fp, "d", x)
+ANSWER: B
+
+Q: You want to open "log.txt" and add new lines at the end
+Q: without deleting old content. Which mode is correct?
+A) "w"
+B) "r"
+C) "a"
+D) "r+"
+ANSWER: C
+
+Q: Which function is safest for reading strings from a file
+Q: because it prevents buffer overflow?
+A) scanf()
+B) gets()
+C) fgets()
+D) fscanf()
+ANSWER: C
+
+Q: After reading past the end of file, what does feof(fp) return
+Q: (assuming a read operation has already failed)?
+A) 0
+B) 1
+C) -1
+D) NULL
+ANSWER: B
+
+Q: You need to read exactly 50 integers from a binary file "data.bin".
+Q: Which function is most appropriate?
+A) fscanf()
+B) fread()
+C) fgets()
+D) getc()
+ANSWER: B
+
+Q: What is the purpose of the third argument in fseek(fp, offset, whence)?
+A) File size limit
+B) Starting position reference (SEEK_SET, SEEK_CUR, SEEK_END)
+C) Buffer size
+D) Error code storage
+ANSWER: B
+
+Q: Which pair of functions is commonly used together to write and then
+Q: read structured data in binary mode?
+A) fprintf() and fscanf()
+B) fwrite() and fread()
+C) fputs() and fgets()
+D) putc() and getc()
+ANSWER: B
+
+Q: If a file is opened in "r+" mode and you write data immediately,
+Q: what usually happens to the original content?
+A) Completely preserved
+B) Overwritten from the beginning
+C) Appended at the end
+D) File becomes read-only
+ANSWER: B
+
+Q: Which function can be used to check if an I/O error occurred on a stream
+Q: (not just EOF)?
+A) feof()
+B) clearerr()
+C) ferror()
+D) perror()
+ANSWER: C
+
